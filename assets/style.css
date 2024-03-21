@@ -1,0 +1,80 @@
+/* style.css content */
+body, html {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #F8F9FA;
+}
+
+.main-container {
+    display: block;
+    height: 100vh;
+}
+
+#sidebar {
+    background-color: #37474F;
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+    z-index: 1;
+}
+
+#sidebar .logo-container {
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Centers the logo horizontally */
+    align-items: center; /* Centers the logo vertically */
+    height: 150px; /* Set a fixed height for the logo container */
+}
+
+.logo {
+    max-width: 100%; /* Ensures the logo is not wider than its container */
+    max-height: 100%; /* Ensures the logo is not taller than its container */
+    height: auto; /* Maintains the aspect ratio of the logo */
+}
+
+.sidebar-title {
+    color: #FFFFFF;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.sidebar-link {
+    color: #B0BEC5;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar-link:hover {
+    background-color: #546E7A;
+    color: #FFFFFF;
+}
+
+#page-content {
+    margin-left: 250px; /* Offset the content to the right of the sidebar */
+    padding: 20px;
+    overflow-y: auto;
+    height: 100%;
+}
+
+#graph-container {
+    width: auto; /* It will naturally fill the available space */
+    min-height: 400px; /* Adjust as needed */
+    /* Further styles for graph-container */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+
