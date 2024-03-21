@@ -24,6 +24,8 @@ def create_activity_pie_chart(df):
                  title='Distribution of Activity Types', color_discrete_sequence=px.colors.sequential.RdBu)
     return fig
 
+
+
 def create_running_distance_histogram(df):
     df_running = df[df['Activity Type'].isin(['Running', 'Trail Running'])]
     fig = px.histogram(df_running, x='Distance', color='Activity Type',
